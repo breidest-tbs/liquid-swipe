@@ -31,5 +31,6 @@ let package = Package(
             name: "liquid-swipeTests",
             dependencies: ["liquid-swipe"]),
     ]
+
 )
 
