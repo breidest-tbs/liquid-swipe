@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "liquid-swipe",
+    defaultLocalization: "en",
     platforms: [
         .iOS(.v11),
     ],
@@ -24,7 +25,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "liquid-swipe",
-            path: "Example"),
+            path: "Example",
+	    exclude: ["Podfile"]),
         .testTarget(
             name: "liquid-swipeTests",
             dependencies: ["liquid-swipe"]),
